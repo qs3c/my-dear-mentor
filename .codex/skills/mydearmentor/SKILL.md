@@ -14,7 +14,7 @@ Maintain a running StudyNotes.md as a mentor-style teaching log while doing deve
 - Translate the template section headings into the chosen language.
 - Keep notes concise, practical, and focused on reasoning and decisions.
 - Update StudyNotes.md throughout the work, not only at the end.
-- Avoid repeating identical commands or explanations unless the context meaningfully changes.
+- Record every distinct CLI command used during the task; if repeated, record it only once with an explanation.
 
 ## Workflow
 1. If the user did not specify a language for StudyNotes.md, ask which language to use.
@@ -25,7 +25,7 @@ Maintain a running StudyNotes.md as a mentor-style teaching log while doing deve
    - How it was done (steps)
    - Core ideas or principles used
 5. Commands:
-   - Record each new CLI command the first time it is used in the session.
+   - Record every distinct CLI command used during the task; if a command is used repeatedly, record it only once.
    - Explain what the command does and why it was used.
 6. Problems and resolutions:
    - Record the problem symptoms and investigation steps.
