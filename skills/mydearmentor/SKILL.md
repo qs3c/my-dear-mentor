@@ -1,4 +1,4 @@
-﻿---
+---
 name: mydearmentor
 description: Maintain a mentor-style StudyNotes.md during software development work. Use when the user asks to keep StudyNotes.md updated, wants step-by-step teaching notes, or when working in the mydearmentor project with ongoing development tasks.
 ---
