@@ -31,7 +31,7 @@ while getopts "a:s:p:h" opt; do
 done
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-SOURCE_FILE="$(dirname "$SCRIPT_DIR")/skills/mydearmentor/SKILL.md"
+SOURCE_FILE="$(dirname "$SCRIPT_DIR")/plugins/mydearmentor/skills/mydearmentor/SKILL.md"
 
 if [ ! -f "$SOURCE_FILE" ]; then
     echo "Error: Source file not found: $SOURCE_FILE"

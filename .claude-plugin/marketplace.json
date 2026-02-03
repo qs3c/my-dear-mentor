@@ -8,7 +8,7 @@
     {
       "name": "mydearmentor",
       "description": "Maintain a mentor-style StudyNotes.md during software development work",
-      "source": ".."
+      "source": "./plugins/mydearmentor"
     }
   ]
 }

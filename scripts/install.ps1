@@ -13,7 +13,7 @@ param(
 )
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$SourceFile = Join-Path (Split-Path -Parent $ScriptDir) "skills\mydearmentor\SKILL.md"
+$SourceFile = Join-Path (Split-Path -Parent $ScriptDir) "plugins\mydearmentor\skills\mydearmentor\SKILL.md"
 
 if (-not (Test-Path $SourceFile)) {
     Write-Error "Source file not found: $SourceFile"
