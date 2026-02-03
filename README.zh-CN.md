@@ -2,13 +2,36 @@
 
 [English](README.md) | 中文
 
-一个 Claude Code 插件，在开发过程中持续维护导师式的 `StudyNotes.md`。
+一个在开发过程中持续维护导师式 `StudyNotes.md` 的技能。支持 Claude Code、Codex 和 Gemini CLI。
 
 ## 安装
+
+### Claude Code（推荐）
 
 ```bash
 /plugin install mydearmentor@qs3c/my-dear-mentor
 ```
+
+### Codex / Gemini CLI
+
+使用安装脚本：
+
+```bash
+# Unix/Linux/macOS
+./scripts/install.sh -a codex    # 仅 Codex
+./scripts/install.sh -a gemini   # 仅 Gemini CLI
+./scripts/install.sh -a all      # 所有代理
+
+# Windows PowerShell
+.\scripts\install.ps1 -Agent codex
+.\scripts\install.ps1 -Agent gemini
+.\scripts\install.ps1 -Agent all
+```
+
+参数说明：
+- `-a / -Agent`：claude、codex、gemini 或 all（默认：all）
+- `-s / -Scope`：global 或 project（默认：global）
+- `-p / -ProjectPath`：项目路径（用于 project 作用域）
 
 ## 功能简介
 
@@ -20,18 +43,7 @@
 
 ## 使用方式
 
-向 Claude Code 说明"使用 mydearmentor skill"或提出"维护导师式 StudyNotes"的需求。
-
-## 仓库结构
-
-```
-mydearmentor/
-├── .claude-plugin/
-│   └── plugin.json              # 插件清单
-└── skills/
-    └── mydearmentor/
-        └── SKILL.md             # 技能定义
-```
+向 AI 代理说明"使用 mydearmentor skill"或提出"维护导师式 StudyNotes"的需求。
 
 ## 备注
 

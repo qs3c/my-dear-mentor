@@ -2,13 +2,36 @@
 
 English | [中文](README.zh-CN.md)
 
-A Claude Code plugin that maintains a mentor-style `StudyNotes.md` during software development tasks.
+A skill that maintains a mentor-style `StudyNotes.md` during software development tasks. Works with Claude Code, Codex, and Gemini CLI.
 
 ## Installation
+
+### Claude Code (recommended)
 
 ```bash
 /plugin install mydearmentor@qs3c/my-dear-mentor
 ```
+
+### Codex / Gemini CLI
+
+Use the install script:
+
+```bash
+# Unix/Linux/macOS
+./scripts/install.sh -a codex    # Codex only
+./scripts/install.sh -a gemini   # Gemini CLI only
+./scripts/install.sh -a all      # All agents
+
+# Windows PowerShell
+.\scripts\install.ps1 -Agent codex
+.\scripts\install.ps1 -Agent gemini
+.\scripts\install.ps1 -Agent all
+```
+
+Options:
+- `-a / -Agent`: claude, codex, gemini, or all (default: all)
+- `-s / -Scope`: global or project (default: global)
+- `-p / -ProjectPath`: project path for project scope
 
 ## What it does
 
@@ -20,18 +43,7 @@ A Claude Code plugin that maintains a mentor-style `StudyNotes.md` during softwa
 
 ## Usage
 
-Ask Claude Code to use the mydearmentor skill, or request a mentor-style StudyNotes log.
-
-## Repository Structure
-
-```
-mydearmentor/
-├── .claude-plugin/
-│   └── plugin.json              # Plugin manifest
-└── skills/
-    └── mydearmentor/
-        └── SKILL.md             # Skill definition
-```
+Ask your AI agent to use the mydearmentor skill, or request a mentor-style StudyNotes log.
 
 ## Notes
 
