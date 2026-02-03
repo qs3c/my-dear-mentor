@@ -1,0 +1,14 @@
+{
+  "name": "qs3c-my-dear-mentor",
+  "owner": {
+    "name": "qs3c",
+    "url": "https://github.com/qs3c"
+  },
+  "plugins": [
+    {
+      "name": "mydearmentor",
+      "description": "Maintain a mentor-style StudyNotes.md during software development work",
+      "source": ".."
+    }
+  ]
+}
